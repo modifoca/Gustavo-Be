@@ -1,0 +1,5 @@
+inherited F_modelo1: TF_modelo1
+  Caption = 'F_modelo1'
+  PixelsPerInch = 96
+  TextHeight = 13
+end

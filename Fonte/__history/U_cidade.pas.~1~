@@ -1,0 +1,25 @@
+unit U_cidade;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, U_modelo, Vcl.ComCtrls, Vcl.Buttons,
+  Vcl.ExtCtrls;
+
+type
+  TF_modelo2 = class(TF_modelo)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  F_modelo2: TF_modelo2;
+
+implementation
+
+{$R *.dfm}
+
+end.
