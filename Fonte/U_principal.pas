@@ -13,6 +13,7 @@ type
     cidade1: TMenuItem;
     estado1: TMenuItem;
     cliente1: TMenuItem;
+    fechar1: TMenuItem;
     procedure cidade1Click(Sender: TObject);
     procedure estado1Click(Sender: TObject);
     procedure cliente1Click(Sender: TObject);

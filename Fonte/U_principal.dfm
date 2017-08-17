@@ -15,8 +15,6 @@ object f_principal: Tf_principal
   PixelsPerInch = 96
   TextHeight = 13
   object MainMenu1: TMainMenu
-    Left = 80
-    Top = 16
     object Cadastro1: TMenuItem
       Caption = 'Cadastro'
       object cidade1: TMenuItem
@@ -31,6 +29,9 @@ object f_principal: Tf_principal
         Caption = 'cliente'
         OnClick = cliente1Click
       end
+    end
+    object fechar1: TMenuItem
+      Caption = 'fechar'
     end
   end
 end
