@@ -46,8 +46,6 @@ object F_modelo: TF_modelo
     Height = 41
     Align = alTop
     TabOrder = 0
-    ExplicitLeft = -8
-    ExplicitWidth = 824
     object sp_inserir: TSpeedButton
       Left = 16
       Top = 8
@@ -192,20 +190,37 @@ object F_modelo: TF_modelo
         Text = 'Projeto Uespar 1.0'
         Width = 50
       end>
-    ExplicitLeft = -16
-    ExplicitTop = 529
-    ExplicitWidth = 824
   end
-  object TabControl1: TTabControl
+  object PageControl1: TPageControl
     Left = 0
     Top = 41
     Width = 900
     Height = 414
+    ActivePage = TabSheet2
     Align = alClient
     TabOrder = 2
-    Tabs.Strings = (
-      'Cadastro'
-      'Consulta')
-    TabIndex = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Cadastro'
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Consulta'
+      ImageIndex = 1
+      object GroupBox2: TGroupBox
+        Left = 0
+        Top = 168
+        Width = 900
+        Height = 224
+        Caption = 'Resultados:'
+        TabOrder = 0
+      end
+      object GroupBox1: TGroupBox
+        Left = -4
+        Top = 0
+        Width = 900
+        Height = 169
+        Caption = 'Filtro'
+        TabOrder = 1
+      end
+    end
   end
 end

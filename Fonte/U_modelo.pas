@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ComCtrls, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ComCtrls, Vcl.ExtCtrls,
+  Vcl.StdCtrls;
 
 type
   TF_modelo = class(TForm)
@@ -15,7 +16,11 @@ type
     sp_excluir: TSpeedButton ;
     sp_cancelar: TSpeedButton;
     sp_editar: TSpeedButton  ;
-    TabControl1: TTabControl ;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    GroupBox1: TGroupBox;
+    GroupBox2: TGroupBox;
     procedure sp_inserirClick(Sender: TObject) ;
     procedure sp_salvarClick(Sender: TObject)  ;
     procedure sp_cancelarClick(Sender: TObject);

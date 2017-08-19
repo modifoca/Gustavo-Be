@@ -9,13 +9,16 @@ uses
   U_principal in 'U_principal.pas' {f_principal},
   U_produtos in 'U_produtos.pas' {F_produto},
   U_vendas in 'U_vendas.pas' {F_venda},
-  U_entprod in 'U_entprod.pas' {F_entprod};
+  U_entprod in 'U_entprod.pas' {F_entprod},
+  Vcl.Themes,
+  Vcl.Styles;
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Glow');
   Application.CreateForm(Tf_principal, f_principal);
   Application.CreateForm(TF_modelo, F_modelo);
   Application.CreateForm(TF_estado, F_estado);
